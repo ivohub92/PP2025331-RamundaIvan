@@ -15,10 +15,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
         div.className = "serie";
 
         div.innerHTML = `
-        <h3>${serie.nombre}</h3>
-        <img src="${serie.imagen}" alt="${serie.nombre}" style="max-width:100%">
-        <p><strong>Géneros:</strong> ${serie.generos.join(", ")}</p>
-        <div>${serie.resumen}</div>
+        <h3>${serie.name}</h3>
+        <img src="${serie.image}" alt="${serie.name}" style="max-width:100%">
+        <p>Géneros ${serie.genres}</p>        
         `;
 
         contenedor.appendChild(div);
